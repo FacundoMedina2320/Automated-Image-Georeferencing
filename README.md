@@ -1,41 +1,45 @@
-Georreferenciación de Imágenes en QGIS
-Este proyecto contiene un código diseñado para realizar la georreferenciación de imágenes rasterizadas en QGIS. La georreferenciación es un proceso que alinea una imagen rasterizada con un sistema de coordenadas geográficas conocido, facilitando su integración con otras capas espaciales en un Sistema de Información Geográfica (SIG).
+🗺️ Georeferencing Images in QGIS
+This project provides a tool for georeferencing raster images in QGIS, aligning them with known geographic coordinates for integration into a Geographic Information System (GIS).
 
-Descripción General
-El objetivo de este proyecto es proporcionar una herramienta para alinear imágenes rasterizadas con capas espaciales, permitiendo su uso en análisis y visualización geográfica dentro de QGIS.
+📋 Overview
+Georeferencing is the process of associating a raster image with known geographic coordinates. This project offers an efficient way to perform this process in QGIS.
 
-Funcionalidades Principales
-1. Selección de Capa
-ARBA: Permite al usuario seleccionar una capa vectorial y una imagen TIFF para realizar la georreferenciación.
-Mapa Mundial: Requiere la selección de una capa del complemento QuickMapServices y una imagen TIFF.
-2. Selección de Puntos de Control
-Los usuarios pueden seleccionar puntos de control tanto en la capa base como en la imagen TIFF para establecer correspondencias.
-Se utiliza QgsMapToolEmitPoint para la selección de puntos, permitiendo a los usuarios capturar coordenadas mediante clics en la interfaz de QGIS.
-3. Georreferenciación
-La herramienta gdal_translate se emplea para transformar la imagen TIFF según los puntos de control proporcionados.
-El resultado es una nueva imagen TIFF georreferenciada, que se guarda como un archivo separado.
-4. Advertencia Inicial
-Al iniciar el programa, se muestra un mensaje informativo que recuerda al usuario la necesidad de agregar manualmente la capa de "Mapa Mundial" al proyecto antes de ejecutar el proceso de georreferenciación.
-Instrucciones de Instalación y Uso
-Preparación del Entorno:
+⚙️ Key Features
+🔍 Base Layer Selection
 
-Asegúrate de tener QGIS y el complemento QuickMapServices instalados.
-Clona este repositorio y abre el proyecto en QGIS.
-Selección de Capa Base:
+ARBA: Select a vector layer and a TIFF image for georeferencing.
+World Map: Choose a layer from the QuickMapServices plugin and a TIFF image.
+📌 Control Points Selection
 
-Para ARBA, carga una capa vectorial y selecciona una imagen TIFF.
-Para el Mapa Mundial, selecciona una capa a través de QuickMapServices y una imagen TIFF.
-Selección de Puntos de Control:
+Select control points on both the base layer and the TIFF image.
+Use QgsMapToolEmitPoint to capture coordinates by clicking in QGIS.
+🖼️ Georeferencing Process
 
-Utiliza la herramienta de selección de puntos para establecer correspondencias entre la capa base y la imagen TIFF.
-Georreferenciación:
+Use gdal_translate to transform the TIFF image based on the provided control points.
+Output a new georeferenced TIFF image.
+⚠️ Initial Warning
 
-Ejecuta el proceso de georreferenciación y guarda la imagen transformada.
-Contribuciones
-Si deseas contribuir a este proyecto, por favor envía una solicitud de extracción (pull request) o reporta problemas (issues) en este repositorio.
+Displays a message reminding the user to manually add the "World Map" layer to the project before starting.
+🚀 How to Use
+Environment Setup
 
-Licencia
-Este proyecto está bajo la licencia MIT.
+Ensure QGIS and the QuickMapServices plugin are installed.
+Clone the repository and open the project in QGIS.
+🗂️ Load Data
 
-Contacto
-Para consultas, sugerencias o contribuciones, puedes contactar al autor a través de [tu correo electrónico].
+ARBA: Load a vector layer and a TIFF image.
+World Map: Select a layer via QuickMapServices and a TIFF image.
+🔗 Control Points Selection
+
+Select points on the base layer and the image to establish correspondences.
+🎯 Georeferencing
+
+Execute the process and save the georeferenced image.
+🤝 Contributions
+Contributions are welcome! Feel free to submit a pull request or report issues in the repository.
+
+📜 License
+This project is licensed under the MIT License.
+
+📧 Contact
+For inquiries or suggestions, please contact the author at facundomedina2320@gmail.com.
