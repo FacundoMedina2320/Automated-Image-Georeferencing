@@ -20,9 +20,6 @@ Georeferencing is the process of associating a raster image with known geographi
    - Use `gdal_translate` to transform the TIFF image based on the provided control points.
    - Output a new georeferenced TIFF image.
 
-4. **⚠️ Initial Warning**
-   - This project uses measures appropriate for the province of Buenos Aires. You must edit the code to use it in your location.
-
 ## 🚀 How to Use
 
 1. **Environment Setup**
@@ -38,6 +35,10 @@ Georeferencing is the process of associating a raster image with known geographi
 
 4. **🎯 Georeferencing**
    - Execute the process and save the georeferenced image.
+
+
+ **⚠️ Initial Warning**
+   - This project uses measures appropriate for the province of Buenos Aires. You must edit the code to use it in your location.
 
 ## 🤝 Contributions
 
