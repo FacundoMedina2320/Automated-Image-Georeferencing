@@ -21,7 +21,7 @@ Georeferencing is the process of associating a raster image with known geographi
    - Output a new georeferenced TIFF image.
 
 4. **⚠️ Initial Warning**
-   - Displays a message reminding the user to manually add the "World Map" layer to the project before starting.
+   - This project uses measures appropriate for the province of Buenos Aires. You must edit the code to use it in your location.
 
 ## 🚀 How to Use
 
